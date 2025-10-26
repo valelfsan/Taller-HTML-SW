@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The 1975</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+  <!-- Bootstrap Icons -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="navbar navbar-dark bg-info">
+    <div class="container">
+      <span class="navbar-brand mb-0 h1">
+        <i class="bi bi-music-note-beamed me-2"></i>
+        Mi Banda Favorita
+      </span>
+    </div>
+  </nav>
+
+  <!-- Contenido principal -->
+  <main class="container my-4">
+    <div class="row g-4">
+      <!-- Columna izquierda: texto + lista -->
+      <section class="col-12 col-lg-8">
+        <h1 class="h3 mb-3">Sobre la banda</h1>
+        <p>
+          Esta es la página de fans de <strong>The 1975</strong>. Aquí
+          encontrarás información, enlaces y novedades. Te recomiendo leer su
+          biografía oficial en
+          <a href="https://en.wikipedia.org/wiki/The_1975" target="_blank" rel="noopener noreferrer">
+            Wikipedia
+          </a>
+          para más detalles.
+        </p>
+        <p>
+          El grupo se caracteriza por su sonido distintivo y sus presentaciones
+          en vivo. A continuación, algunas cosas que todo fan debería conocer.
+        </p>
+
+        <h2 class="h5 mt-4">Lista de álbumes destacados</h2>
+        <ul class="list-group">
+          <li class="list-group-item">A Brief Inquiry Into Online Relationships (2018)</li>
+          <li class="list-group-item"> Being Funny In A Foreign Language (2022)</li>
+          <li class="list-group-item">The 1975 (2013)</li>
+        </ul>
+
+        <h2 class="h5 mt-4">Suscríbete para recibir noticias</h2>
+        <!-- Formulario (Bootstrap + HTML5) -->
+        <form class="row g-3" novalidate>
+          <div class="col-md-6">
+            <label for="name" class="form-label">Nombre</label>
+            <input id="name" name="name" type="text" class="form-control" required />
+            <div class="form-text">Como quieres que te llamemos.</div>
+          </div>
+          <div class="col-md-6">
+            <label for="email" class="form-label">Correo</label>
+            <input id="email" name="email" type="email" class="form-control" required />
+            <div class="invalid-feedback">Ingresa un correo válido.</div>
+          </div>
+          <div class="col-md-12">
+            <label for="interest" class="form-label">Interés</label>
+            <select id="interest" name="interest" class="form-select" required>
+              <option value="" selected disabled>Selecciona una opción</option>
+              <option value="novedades">Novedades</option>
+              <option value="conciertos">Conciertos</option>
+              <option value="lanzamientos">Lanzamientos</option>
+            </select>
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="terms" required />
+              <label class="form-check-label" for="terms">
+                Acepto los términos y condiciones
+              </label>
+              <div class="invalid-feedback">Debes aceptar los términos.</div>
+            </div>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-info text-white" type="submit">Suscribirme</button>
+          </div>
+        </form>
+      </section>
+
+      <!-- Columna derecha: imagen -->
+      <aside class="col-12 col-lg-4">
+        <div class="card shadow-sm">
+          <img src="assets/img/the1975.jpg" alt="Portada de la banda" class="card-img-top" />
+          <div class="card-body">
+            <h5 class="card-title">Portada</h5>
+            <p class="card-text">
+              <code>The 1975</code>.
+            </p>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+
+</body>
+</html>

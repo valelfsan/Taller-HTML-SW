@@ -1,0 +1,16 @@
+/* Ajustes mínimos propios */
+:root {
+  --brand-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* Barra */
+.navbar.bg-info { box-shadow: var(--brand-shadow); }
+
+/* Tipografía y espaciamiento general */
+body { line-height: 1.6; }
+
+/* Card de la imagen */
+.card-img-top {
+  object-fit: cover;
+  max-height: 260px; 
+}
